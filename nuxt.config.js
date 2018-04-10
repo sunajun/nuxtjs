@@ -13,6 +13,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css:['~assets/css/normalize.css','~assets/css/main.css'],
   /*
   ** Customize the progress bar color
   */
@@ -33,6 +34,18 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    //配置webpack的loader
+    loaders:[
+      {
+        test:/\.(png|jpe?g|gif|svg)$/,
+        loader:'url-loader',
+        query:{
+          limit:10000,
+          name:'img/[name].[hash].[ext]'
+        }
+      }
+    ]
+
   }
 }
