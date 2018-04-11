@@ -6,7 +6,7 @@
       <li><a href="/">Home</a></li>
       <li><a href="/news/1a23">News-1</a></li>
       <li><a href="/news/456">News-2</a></li>
-      <li><nuxt-link :to="{name:'news-id',params:{id:123}}">News-1</nuxt-link></li>
+      <li><nuxt-link :to="{name:'news-id',params:{id:123,title:'sunajun.com'}}">News-1</nuxt-link></li>
     </ul>
   </div>
 </template>
