@@ -45,7 +45,8 @@ module.exports = {
           name:'img/[name].[hash].[ext]'
         }
       }
-    ]
+    ],
+    vendor: ['axios']
 
   }
 }
